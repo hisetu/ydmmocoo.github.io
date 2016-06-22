@@ -102,7 +102,7 @@ GC是垃圾收集的意思（Gabage Collection）,内存处理是编程人员容
 2.XML包括哪些解释技术，区别是什么？
 
 DOM和SA">
-<meta property="og:updated_time" content="2016-06-22T09:16:08.214Z">
+<meta property="og:updated_time" content="2016-06-22T09:17:37.102Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android面试题整理">
 <meta name="twitter:description" content="Java部分1.GC是什么? 为什么要有GC?
@@ -582,7 +582,10 @@ DOM和SA">
 <blockquote>
 <p>Adnroid用的是SQLite数据库。它和其他网络数据库类似，也是通过SQL对数据进行管理。SQLite的操作非常简单，包括数据类型在建表时也可以不指定。<br>使用ContentProvider 可以将数据共享给其他应用，让除本应用之外的应用也可以访问本应用的数据。它的底层是用SQLite 数据库实现的，所以其对数据做的各种操作都是以Sql实现，只是在上层提供的是Uri。</p>
 </blockquote>
-<p>19.通过Intent传递一些二进制数据的方法有哪些?<br>1)使用Serializable接口实现序列化，这是Java常用的方法。<br>2)实现Parcelable接口，这里Android的部分类比如Bitmap类就已经实现了，同时Parcelable在Android AIDL中交换数据也很常见的。 </p>
+<p>19.通过Intent传递一些二进制数据的方法有哪些?</p>
+<blockquote>
+<p>1)使用Serializable接口实现序列化，这是Java常用的方法。<br>2)实现Parcelable接口，这里Android的部分类比如Bitmap类就已经实现了，同时Parcelable在Android AIDL中交换数据也很常见的。 </p>
+</blockquote>
 <p>20.对一些资源以及状态的操作保存，最好是保存在生命周期的哪个函数中进行？</p>
 <blockquote>
 <p>onResume()恢复数据、onPause()保存数据。</p>
