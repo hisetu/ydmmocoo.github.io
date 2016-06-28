@@ -238,6 +238,169 @@
             
               
                 
+                <a class="post-title-link" href="/2016/06/28/Android-Studio插件整理/" itemprop="url">
+                  Android Studio插件整理
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-06-28T09:34:50+08:00" content="2016-06-28">
+              2016-06-28
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Android开发/" itemprop="url" rel="index">
+                    <span itemprop="name">Android开发</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/06/28/Android-Studio插件整理/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/28/Android-Studio插件整理/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>现在Android的开发者基本上都使用Android Studio进行开发(如果你还在使用eclipse那也行，毕竟你乐意怎么样都行)。使用好Android Studio插件能大量的减少我们的工作量。</p>
+<h1 id="1-GsonFormat"><a href="#1-GsonFormat" class="headerlink" title="1.GsonFormat"></a>1.<a href="http://plugins.jetbrains.com/plugin/7654?pr=androidstudio" target="_blank" rel="external">GsonFormat</a></h1><p>快速将json字符串转换成一个Java Bean，免去我们根据json字符串手写对应Java Bean的过程。</p>
+<p><img src="http://plugins.jetbrains.com/files/7654/screenshot_15729.png" alt=""></p>
+<p>使用方法：快捷键Alt+S也可以使用Alt+Insert选择GsonFormat</p>
+<h1 id="2-Android-ButterKnife-Zelezny"><a href="#2-Android-ButterKnife-Zelezny" class="headerlink" title="2.Android ButterKnife Zelezny"></a>2.<a href="http://plugins.jetbrains.com/plugin/7369?pr=androidstudio" target="_blank" rel="external">Android ButterKnife Zelezny</a></h1><p>配合ButterKnife实现注解，从此不用写findViewById，想着就爽啊。在Activity，Fragment，Adapter中选中布局xml的资源id自动生成butterknife注解。</p>
+<p><img src="http://plugins.jetbrains.com/files/7369/screenshot_14384.png" alt=""></p>
+<p>使用方法：Ctrl+Shift+B选择图上所示选项</p>
+<h1 id="3-Android-Code-Generator"><a href="#3-Android-Code-Generator" class="headerlink" title="3.Android Code Generator"></a>3.<a href="http://plugins.jetbrains.com/plugin/7595?pr=androidstudio" target="_blank" rel="external">Android Code Generator</a></h1><p>根据布局文件快速生成对应的Activity，Fragment，Adapter，Menu。</p>
+<p><img src="http://plugins.jetbrains.com/files/7595/screenshot_14834.png" alt=""><br><img src="http://plugins.jetbrains.com/files/7595/screenshot_14833.png" alt=""></p>
+<h1 id="4-Android-Parcelable-code-generator"><a href="#4-Android-Parcelable-code-generator" class="headerlink" title="4.Android Parcelable code generator"></a>4.<a href="http://plugins.jetbrains.com/plugin/7332?pr=androidstudio" target="_blank" rel="external">Android Parcelable code generator</a></h1><p>JavaBean序列化，快速实现Parcelable接口。</p>
+<p><img src="https://segmentfault.com/image?src=http://img.blog.csdn.net/20160416104459926&amp;objectId=1190000005092842&amp;token=ab29ed79d41be9e42b3a3d2ed1ec3bef" alt=""></p>
+<h1 id="5-Android-Methods-Count"><a href="#5-Android-Methods-Count" class="headerlink" title="5.Android Methods Count"></a>5.<a href="http://plugins.jetbrains.com/plugin/8076?pr=androidstudio" target="_blank" rel="external">Android Methods Count</a></h1><p>显示依赖库中得方法数</p>
+<p><img src="http://plugins.jetbrains.com/files/8076/screenshot_15509.png" alt=""></p>
+<h1 id="6-Lifecycle-Sorter"><a href="#6-Lifecycle-Sorter" class="headerlink" title="6.Lifecycle Sorter"></a>6.<a href="http://plugins.jetbrains.com/plugin/7742?pr=androidstudio" target="_blank" rel="external">Lifecycle Sorter</a></h1><p>可以根据Activity或者fragment的生命周期对其生命周期方法位置进行先后排序，快捷键Ctrl + alt + K</p>
+<p><img src="http://plugins.jetbrains.com/files/7742/screenshot_15071.png" alt=""><br><img src="http://plugins.jetbrains.com/files/7742/screenshot_15070.png" alt=""></p>
+<h1 id="7-CodeGlance"><a href="#7-CodeGlance" class="headerlink" title="7.CodeGlance"></a>7.<a href="http://plugins.jetbrains.com/plugin/7275?pr=androidstudio" target="_blank" rel="external">CodeGlance</a></h1><p>在右边可以预览代码，实现快速定位</p>
+<p><img src="http://plugins.jetbrains.com/files/7275/screenshot_14294.png" alt=""><br><img src="http://plugins.jetbrains.com/files/7275/screenshot_14295.png" alt=""></p>
+<h1 id="8-findBugs-IDEA"><a href="#8-findBugs-IDEA" class="headerlink" title="8.findBugs-IDEA"></a>8.<a href="http://plugins.jetbrains.com/plugin/3847?pr=androidstudio" target="_blank" rel="external">findBugs-IDEA</a></h1><p>查找bug的插件，Android Studio也提供了代码审查的功能（Analyze-Inspect Code…）</p>
+<p><img src="http://plugins.jetbrains.com/oldimg/screenshots/FindBugs-IDEA_2541.png" alt=""></p>
+<h1 id="9-ADB-WIFI"><a href="#9-ADB-WIFI" class="headerlink" title="9.ADB WIFI"></a>9.<a href="http://plugins.jetbrains.com/plugin/7856?pr=androidstudio" target="_blank" rel="external">ADB WIFI</a></h1><p>使用wifi无线调试你的app，无需root权限<br>也可参考以下文章：<br><a href="http://www.jianshu.com/p/21d1b65d92a4" target="_blank" rel="external">Android wifi无线调试App新玩法ADB WIFI</a></p>
+<p><img src="http://plugins.jetbrains.com/files/7856/screenshot_15153.png" alt=""></p>
+<h1 id="10-AndroidPixelDimenGenerator"><a href="#10-AndroidPixelDimenGenerator" class="headerlink" title="10.AndroidPixelDimenGenerator"></a>10.<a href="https://github.com/succlz123/AndroidPixelDimenGenerator" target="_blank" rel="external">AndroidPixelDimenGenerator</a></h1><p>Android Studio自动生成dimen.xml文件插件</p>
+<p><img src="https://github.com/succlz123/AndroidPixelDimenGenerator/raw/master/snapshot/1.jpeg" alt=""></p>
+<h1 id="11-JsonOnlineViewer"><a href="#11-JsonOnlineViewer" class="headerlink" title="11.JsonOnlineViewer"></a>11.<a href="http://plugins.jetbrains.com/plugin/7838?pr=androidstudio" target="_blank" rel="external">JsonOnlineViewer</a></h1><p>在Android Studio中请求、调试接口</p>
+<p><img src="http://plugins.jetbrains.com/files/7838/screenshot_15113.png" alt=""></p>
+<h1 id="12-Android-Styler"><a href="#12-Android-Styler" class="headerlink" title="12.Android Styler"></a>12.<a href="http://plugins.jetbrains.com/plugin/7972?pr=androidstudio" target="_blank" rel="external">Android Styler</a></h1><p>根据xml自动生成style代码的插件</p>
+<p><img src="http://plugins.jetbrains.com/files/7972/screenshot_15340.png" alt=""><br><img src="http://plugins.jetbrains.com/files/7972/screenshot_15339.png" alt=""><br><img src="http://plugins.jetbrains.com/files/7972/screenshot_15338.png" alt=""></p>
+<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage:"></a>Usage:</h2><p>a. copy lines with future style from your layout.xml file<br>b. paste it to styles.xml file with Ctrl+Shift+D (or context menu)<br>c. enter name of new style in the modal window<br>d. your style is prepared! </p>
+<h1 id="13-Android-Drawable-Importer"><a href="#13-Android-Drawable-Importer" class="headerlink" title="13.Android Drawable Importer"></a>13.<a href="http://plugins.jetbrains.com/plugin/7658?pr=androidstudio" target="_blank" rel="external">Android Drawable Importer</a></h1><p>这是一个非常强大的图片导入插件。它导入Android图标与Material图标的Drawable ，批量导入Drawable ，多源导入Drawable（即导入某张图片各种dpi对应的图片）</p>
+<p><img src="http://plugins.jetbrains.com/files/7658/screenshot_15535.png" alt=""><br><img src="http://plugins.jetbrains.com/files/7658/screenshot_15691.png" alt=""><br><img src="http://plugins.jetbrains.com/files/7658/screenshot_15533.png" alt=""><br><img src="http://plugins.jetbrains.com/files/7658/screenshot_15537.png" alt=""><br><img src="http://plugins.jetbrains.com/files/7658/screenshot_15536.png" alt=""><br><img src="http://plugins.jetbrains.com/files/7658/screenshot_15534.png" alt=""><br><img src="http://plugins.jetbrains.com/files/7658/screenshot_15532.png" alt=""><br><img src="http://plugins.jetbrains.com/files/7658/screenshot_15351.png" alt=""></p>
+<h1 id="14-SelectorChapek-for-Android"><a href="#14-SelectorChapek-for-Android" class="headerlink" title="14.SelectorChapek for Android"></a>14.<a href="http://plugins.jetbrains.com/plugin/7298?pr=androidstudio" target="_blank" rel="external">SelectorChapek for Android</a></h1><p>通过资源文件命名自动生成Selector文件。</p>
+<p><img src="http://plugins.jetbrains.com/files/7298/screenshot_14292.png" alt=""><br><img src="http://plugins.jetbrains.com/files/7298/screenshot_14291.png" alt=""><br><img src="http://plugins.jetbrains.com/files/7298/screenshot_14290.png" alt=""></p>
+<h1 id="15-GenerateSerialVersionUID"><a href="#15-GenerateSerialVersionUID" class="headerlink" title="15.GenerateSerialVersionUID"></a>15.<a href="http://plugins.jetbrains.com/plugin/185?pr=androidstudio" target="_blank" rel="external">GenerateSerialVersionUID</a></h1><p>实现Serializable序列化bean</p>
+<p>Adds a new action ‘SerialVersionUID’ in the generate menu (alt + ins). The action adds an serialVersionUID field in the current class or updates it if it already exists, and assigns it the same value the standard ‘serialver’ JDK tool would return. The action is only visible when IDEA is not rebuilding its indexes, the class is serializable and either no serialVersionUID field exists or its value is different from the one the ‘serialver’ tool would return.</p>
+<h1 id="16-genymotion"><a href="#16-genymotion" class="headerlink" title="16.genymotion"></a>16.<a href="http://plugins.jetbrains.com/plugin/7269?pr=androidstudio" target="_blank" rel="external">genymotion</a></h1><p>速度较快的android模拟器</p>
+<p><img src="http://plugins.jetbrains.com/files/7269/screenshot_14278.png" alt=""></p>
+<h1 id="17-LeakCanary"><a href="#17-LeakCanary" class="headerlink" title="17.LeakCanary"></a>17.<a href="https://github.com/square/leakcanary" target="_blank" rel="external">LeakCanary</a></h1><p>帮助你在开发阶段方便的检测出内存泄露的问题，使用起来更简单方便。<br>可以参考以下文章：<br><a href="http://www.liaohuqiu.net/cn/posts/leak-canary-read-me/" target="_blank" rel="external">LeakCanary 中文使用说明</a></p>
+<p><img src="http://stormzhang.com/image/leakcaneray.png" alt=""></p>
+<h1 id="18-Android-Postfix-Completion"><a href="#18-Android-Postfix-Completion" class="headerlink" title="18.Android Postfix Completion"></a>18.<a href="http://plugins.jetbrains.com/plugin/7775?pr=androidstudio" target="_blank" rel="external">Android Postfix Completion</a></h1><p>可根据后缀快速完成代码，这个属于拓展吧，系统已经有这些功能，如sout、notnull等，这个插件在原有的基础上增添了一些新的功能，我更想做的是通过原作者的代码自己定制功能，那就更爽了</p>
+<p><img src="http://plugins.jetbrains.com/files/7775/screenshot_15042.png" alt=""></p>
+<h1 id="19-Android-Holo-Colors-Generator"><a href="#19-Android-Holo-Colors-Generator" class="headerlink" title="19.Android Holo Colors Generator"></a>19.<a href="https://plugins.jetbrains.com/plugin/7366?pr=" target="_blank" rel="external">Android Holo Colors Generator</a></h1><p>通过自定义Holo主题颜色生成对应的Drawable和布局文件</p>
+<p><img src="https://plugins.jetbrains.com/files/7366/screenshot_14379.png" alt=""></p>
+<h1 id="20-dagger-intellij-plugin"><a href="#20-dagger-intellij-plugin" class="headerlink" title="20.dagger-intellij-plugin"></a>20.<a href="https://github.com/square/dagger-intellij-plugin" target="_blank" rel="external">dagger-intellij-plugin</a></h1><p>dagger可视化辅助工具</p>
+<p><img src="https://github.com/square/dagger-intellij-plugin/raw/master/images/inject-to-provide.gif" alt=""></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/06/24/Android自定义加载中Dialog/" itemprop="url">
                   Android自定义加载中Dialog
                 </a>
@@ -1005,7 +1168,7 @@ dialog.close();
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
