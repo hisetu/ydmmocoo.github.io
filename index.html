@@ -238,6 +238,156 @@
             
               
                 
+                <a class="post-title-link" href="/2016/06/30/Android调用微信扫一扫和支付宝扫一扫/" itemprop="url">
+                  Android调用微信扫一扫和支付宝扫一扫
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-06-30T16:59:05+08:00" content="2016-06-30">
+              2016-06-30
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Android开发/" itemprop="url" rel="index">
+                    <span itemprop="name">Android开发</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/06/30/Android调用微信扫一扫和支付宝扫一扫/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/30/Android调用微信扫一扫和支付宝扫一扫/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>近期开发一个项目当中需要先将二维码图片保存到相册，然后再跳转到支付宝、微信扫一扫读取图片中的二维码。</p>
+<h2 id="微信"><a href="#微信" class="headerlink" title="微信"></a>微信</h2><p>在自己的应用中打开微信扫一扫代码：</p>
+<pre><code>private void toWeChatScan() {
+    try {
+        //利用Intent打开微信
+        Uri uri = Uri.parse(&quot;weixin://dl/scan&quot;);
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+    } catch (Exception e) {
+        //若无法正常跳转，在此进行错误处理
+        Toast.makeText(DinpayWeChatActivity.this, &quot;无法跳转到微信，请检查您是否安装了微信！&quot;, Toast.LENGTH_SHORT).show();
+    }
+}
+</code></pre><p>使用以上代码跳转到微信（版本：6.3.18）扫一扫，会出现以下情况：</p>
+<pre><code>     情况                         结果
+安装并登陆了微信             跳转到微信扫一扫
+安装了但未登陆微信           跳转到微信登陆，登陆成功后跳转到扫一扫
+未安装微信                   Toast没安装微信
+</code></pre><h2 id="支付宝"><a href="#支付宝" class="headerlink" title="支付宝"></a>支付宝</h2><pre><code>private void toAliPayScan() {
+    try {
+        //利用Intent打开支付宝
+        //支付宝跳过开启动画打开扫码和付款码的 url scheme 分别是alipayqr://platformapi/startapp?saId=10000007和           alipayqr://platformapi/startapp?saId=20000056
+        Uri uri = Uri.parse(&quot;alipayqr://platformapi/startapp?saId=10000007&quot;);
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+    } catch (Exception e) {
+        //若无法正常跳转，在此进行错误处理
+        Toast.makeText(DinpayWeChatActivity.this, &quot;无法跳转到支付宝，请检查您是否安装了支付宝！&quot;, Toast.LENGTH_SHORT).show();
+    }
+}
+</code></pre><p>感谢以下作者：<br><a href="http://blog.csdn.net/l_lhc/article/details/51636130" target="_blank" rel="external">Android调用微信扫一扫</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/06/28/Android-Studio插件整理/" itemprop="url">
                   Android Studio插件整理
                 </a>
@@ -1220,7 +1370,7 @@ dialog.close();
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
